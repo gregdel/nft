@@ -10,3 +10,21 @@ func VerdictReturn() []expr.Any {
 		},
 	}
 }
+
+// VerdictAccept accepts the packet
+func VerdictAccept() []expr.Any {
+	return []expr.Any{
+		&expr.Verdict{
+			Kind: expr.VerdictAccept,
+		},
+	}
+}
+
+// VerdictDrop drops the packet
+func VerdictDrop() []expr.Any {
+	return []expr.Any{
+		&expr.Verdict{
+			Kind: expr.VerdictDrop,
+		},
+	}
+}
